@@ -1,4 +1,4 @@
-function GuestList(prop) {
+function GuestList({guestList}) {
     return (
     <div>
         <h2>Guest List</h2>
@@ -10,7 +10,7 @@ function GuestList(prop) {
             </tr>
         </thead>
         <tbody>
-        {prop.guestList.map(guest => (
+        {guestList.map(guest => (
             <tr key={guest.id}>
                 <td>{guest.name}</td>
                 <td>{String(guest.kidsMeal)}</td>

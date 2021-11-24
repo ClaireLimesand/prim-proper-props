@@ -5,6 +5,7 @@ import './App.css';
 import Header from '../Header/Header.js'
 import Footer from '../Footer/Footer.js'
 import GuestList from '../GuestList/GuestList.js'
+import DinnerSupplies from '../DinnerSupplies/DinnerSupplies.js'
 
 function App() {
   let [guestList, setGuestList] = useState([]);
@@ -103,7 +104,8 @@ function App() {
         <button type="submit">Add Guest</button>
       </form>
         <GuestList guestList={guestList}/>
-      <h2>Dinner Supplies</h2>
+        <DinnerSupplies guestList={guestList}/>
+      {/* <h2>Dinner Supplies</h2>
       <div>
         Spoons: {guestList.length * 2}
       </div>
@@ -112,7 +114,7 @@ function App() {
       </div>
       <div>
         Knives: {guestList.length * 2}
-      </div>
+      </div> */}
       < Footer />
     </div>
   );
