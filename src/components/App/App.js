@@ -102,16 +102,7 @@ function App() {
         </div>
         <button type="submit">Add Guest</button>
       </form>
-      <h2>Guest List</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Kid's Meal</th>
-          </tr>
-        </thead>
         <GuestList guestList={guestList}/>
-      </table>
       <h2>Dinner Supplies</h2>
       <div>
         Spoons: {guestList.length * 2}
